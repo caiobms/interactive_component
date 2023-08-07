@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --body_background: rgb(20, 21, 25);
+  --container_background: rgb(33, 40, 50);
+  --orange: rgb(250, 126, 44);
+  --font_white: rgb(255, 255, 255);
+  --font_gray: rgb(120, 128, 140);
+  --btn_gray: rgb(38, 47, 56);
+  --btn_active: rgb(124, 136, 152);
+  --primary-font: "Roboto";
+  --h1_size: 24px;
+  --p_size: 16px;
+  --box_shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.36);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body_background);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--container_background);
+  border-radius: 15px;
+  width: 22%;
+  height: 23rem;
+  align-items: flex-start;
+  padding: 20px 30px;
+  gap: 15px 0;
+  box-shadow: var(--box_shadow);
+}
+
+.star_icon {
+  background-color: var(--btn_gray);
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+}
+
+h1 {
+  font-size: var(--h1_size);
+  color: var(--font_white);
+  padding-top: 15px;
+}
+
+p {
+  color: var(--font_gray);
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  gap: 0 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  background-color: var(--btn_gray);
+  height: 50px;
+  border-radius: 100%;
+  text-align: center;
+  cursor: pointer;
+  color: var(--font_gray);
+}
+
+.btn.active {
+  background-color: var(--btn_active);
+  color: var(--font_white);
+}
+
+.btn:hover {
+  background-color: var(--orange);
+  color: var(--font_white);
+}
+
+.submit {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  background-color: var(--orange);
+  border-radius: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: var(--font_white);
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: var(--font_white);
+  color: var(--orange);
+}
