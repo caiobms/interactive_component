@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
 
 :root {
   --body_background: rgb(20, 21, 25);
@@ -8,10 +8,10 @@
   --font_gray: rgb(120, 128, 140);
   --btn_gray: rgb(38, 47, 56);
   --btn_active: rgb(124, 136, 152);
-  --primary-font: "Roboto";
+  --primary-font: "Overpass";
   --h1_size: 24px;
   --p_size: 16px;
-  --box_shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.36);
+  --box_shadow: 5px 5px 15px 5px rgba(28, 28, 28, 0.36);
 }
 
 * {
@@ -34,20 +34,27 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--container_background);
-  border-radius: 15px;
+  border-radius: 30px;
   width: 22%;
-  height: 23rem;
+  height: 400px;
   align-items: flex-start;
   padding: 20px 30px;
   gap: 15px 0;
-  box-shadow: var(--box_shadow);
 }
 
 .star_icon {
   background-color: var(--btn_gray);
-  border-radius: 50%;
-  height: 45px;
-  width: 45px;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  font-size: 20px;
 }
 
 h1 {
